@@ -1,0 +1,16 @@
+extends /layouts/main
+
+block variables
+  include /blocks/card/card
+
+  - const title = 'Главная';
+
+block content
+  +card({
+    name: 'Кеша',
+    age: '9 мес.',
+    color: 'Полосатый',
+    imgLink: 'https://via.placeholder.com/600X400',
+    pawCount: '4',
+    sold: false
+  })
